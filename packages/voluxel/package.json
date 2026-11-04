@@ -1,0 +1,42 @@
+{
+  "name": "voluxel",
+  "version": "0.1.0",
+  "description": "WebGPU voxel smoke, fire and explosion volumes for three.js: particle billows voxelized into sparse brick grids, raymarched with precomputed lighting.",
+  "type": "module",
+  "main": "./dist/voluxel.js",
+  "module": "./dist/voluxel.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/voluxel.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "three": "^0.187.0"
+  },
+  "keywords": [
+    "three",
+    "webgpu",
+    "tsl",
+    "volumetric",
+    "smoke",
+    "fire",
+    "explosion",
+    "voxel"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

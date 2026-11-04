@@ -1,0 +1,14 @@
+{
+  "name": "voluxel-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w packages/voluxel && npm run build -w apps/web",
+    "build:lib": "npm run build -w packages/voluxel"
+  }
+}
